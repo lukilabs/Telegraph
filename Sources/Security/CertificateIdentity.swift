@@ -47,7 +47,7 @@ public extension CertificateIdentity {
 
 // MARK: Optional passphrases (passphrases are required on MacOS)
 
-#if os(iOS) || os(watchOS) || os(tvOS)
+#if os(iOS) || os(watchOS) || os(tvOS) || os(visionOS)
 
   public extension CertificateIdentity {
     /// Creates a CertificateIdentity by importing PCKS12 data, without passphrase.
